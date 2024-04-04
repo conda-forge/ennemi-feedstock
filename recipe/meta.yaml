@@ -1,5 +1,5 @@
 {% set name = "ennemi" %}
-{% set version = "1.2.1post1" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ source:
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ennemi-{{ version }}.tar.gz
   #sha256: 4658e7a70eabeda050d6710bff49f65397570874d8525b8aec342a249c9cb671
   url: https://github.com/polsys/ennemi/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e7b24caf6259e9c3b630a0262d2858273462c995e7350e7904b784632f25c4e2
+  sha256: 0c84a28cc2477060600de0b428c940df2c1ee396c0501d09985f2b6874a37102
 
 build:
   noarch: python
