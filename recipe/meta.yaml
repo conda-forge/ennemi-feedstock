@@ -1,6 +1,6 @@
-{% set python_min = '3.11' %}
+{% set python_min = "3.11" %}
 {% set name = "ennemi" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -10,12 +10,12 @@ source:
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ennemi-{{ version }}.tar.gz
   #sha256: 4658e7a70eabeda050d6710bff49f65397570874d8525b8aec342a249c9cb671
   url: https://github.com/polsys/ennemi/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 29e190fa925d286a406cfcdafe3194b2d89fcf19b0aaf8f2b0367efbbd740eff
+  sha256: 7ce768ae1a60ada5603315ffd4766ba46dab24de8e773edf26734015b8af5d5a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
